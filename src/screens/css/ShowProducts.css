@@ -1,0 +1,17 @@
+#warmDrinks {
+  overflow: hidden;
+  opacity: 1;
+  height: 10em;
+  transition: height 500ms 50ms;
+}
+
+#warmDrinks.dontShow {
+  overflow: hidden;
+  opacity: 1;
+  height: 0px;
+  transition: height 500ms 50ms;
+}
+
+#warmDrinks.dontShow::after {
+  display: none;
+}

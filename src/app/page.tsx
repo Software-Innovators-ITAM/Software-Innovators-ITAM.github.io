@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import ShowProducts from "@/screens/ShowProducts/ShowProducts";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className='text-2xl'>Software Innovators</h1>
-    </main>
+    <>
+      <main className="p-4">
+        <ShowProducts />
+      </main>
+    </>
   )
 }
