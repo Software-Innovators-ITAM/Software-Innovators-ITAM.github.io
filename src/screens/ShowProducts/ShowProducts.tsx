@@ -71,6 +71,19 @@ let coldDrinks: CoffeCardProps[] = [
   },
 ]
 
+let frappeDrinks: CoffeCardProps[] = [
+  {
+    name: 'Mokachino Frappé',
+    imgSrc: CoffeImage.src,
+    price: 45.5
+  },
+  {
+    name: 'Frappé de temporada',
+    imgSrc: CoffeImage.src,
+    price: 50.00
+  },
+]
+
 export default function ShowProducts() {
   return (
     <>
@@ -143,7 +156,7 @@ export default function ShowProducts() {
           spacing={1}
           sx={{ width: 'inherit', margin: 0 }}
         >
-          {warmDrinks.map((drink, index) => (
+          {frappeDrinks.map((drink, index) => (
             <Grid xs={12} sm={4} lg={2} key={index} className="mb-4 md:mb-8 lg:pr-4">
               <CoffeCard
                 name={drink.name}
