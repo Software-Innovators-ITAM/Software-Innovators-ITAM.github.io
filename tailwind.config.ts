@@ -11,6 +11,7 @@ const config: Config = {
     colors: {
       'green': '#052e16',
       'white': '#fff',
+      'cream': '#f2f2f2',
       'gray': '#4b5563',
     },
     extend: {

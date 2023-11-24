@@ -2,7 +2,7 @@
 import CoffeCard from "@/components/CoffeCard/CoffeCard";
 import { ArrowDownCircleIcon, ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import '../css/ShowProducts.css'
+//import '../css/ShowProducts.css'
 
 export default function ShowProducts() {
 	const [showWarmDrinks, setShowWarmDrinks] = useState(true)
@@ -43,9 +43,10 @@ export default function ShowProducts() {
 				</div>
 			</div>
 			<div
-				id="warmDrinks"
-				className={`mx-4 mt-2 ${showWarmDrinks ? '' : 'dontShow'}`}
+
 			>
+				<CoffeCard />
+				<CoffeCard />
 				<CoffeCard />
 			</div>
 		</>

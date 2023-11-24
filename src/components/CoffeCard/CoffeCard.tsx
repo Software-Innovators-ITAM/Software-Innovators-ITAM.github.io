@@ -1,12 +1,20 @@
-import Image from 'next/image'
+import { Card, CardContent, CardMedia } from '@mui/material'
 import CoffeImage from '../../../public/images/coffee-cup.png'
+import Image from 'next/image'
 
 export default function CoffeCard() {
-    return (
-        <div className="rounded-lg bg-white py-2 px-3 h-20">
-            <div className="rounded-md">
-                <Image src={CoffeImage} alt="Vaso de Café" />
-            </div>
-        </div>
-    )
+  return (
+    <Card sx={{ maxWidth: 345 }} >
+      <CardMedia
+        component='img'
+        sx={{ height: 140 }}
+        image={CoffeImage.src}
+        alt='Vaso de café'
+        title='Vaso de café'
+      />
+      <CardContent>
+
+      </CardContent>
+    </Card>
+  )
 }

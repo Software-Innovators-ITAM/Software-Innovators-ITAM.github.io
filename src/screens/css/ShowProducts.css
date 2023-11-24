@@ -1,7 +1,7 @@
 #warmDrinks {
-  overflow: hidden;
+  overflow: auto;
   opacity: 1;
-  height: 10em;
+  height: 16em;
   transition: height 500ms 50ms;
 }
 
